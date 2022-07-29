@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My First Website</title>
+    </head>
+
+    <style>
+    body {
+        background-color: lightgray;
+    }
+    </style>
+    <body>
+        <h1 style="font-size:36px;text-align:center;">My First Web Page</h1>
+        <link rel="stylesheet" href="mystyle.css">
+        <h2>Websites are built with HTML</h2>
+        <p style="color:red;">I created a webpage</p>
+        <p id="Live_Time"></p>
+        <img src="https://www.udacity.com/blog/wp-content/uploads/2020/06/HTML_Blog-scaled.jpeg" alt="HTML" width="500" height="600">
+    </body>
+        <script>
+            const d = new Date();
+            document.getElementById("Live_Time").innerHTML = d;
+        </script>
+</html>
