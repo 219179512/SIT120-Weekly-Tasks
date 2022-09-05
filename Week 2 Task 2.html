@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>SIT120 Weekly Task Test Site</title>
+    </head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+    body {
+        background-color: rgb(233, 233, 233);
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: rgb(78, 78, 78);
+      } 
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }   
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 20px;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media screen and (max-width:500px) {
+        .column {
+        width: 100%;
+        }
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    </style>
+    <body>
+        
+        <h1 style="font-size:36px;text-align:center;">SIT120 Weekly Tasks</h1>
+        
+        <div class="navbar">
+            <a href="file:///E:/User/Desktop/SIT120%20Introduction%20to%20Responsive%20Web%20Apps/Seminars/Week%202%20Prac/Week%202%20Task%202.html#">Navigation Link 1</a>
+            <a href="file:///E:/User/Desktop/SIT120%20Introduction%20to%20Responsive%20Web%20Apps/Seminars/Week%202%20Prac/Week%202%20Task%202.html#">Navigation Link 2</a>
+            <a href="file:///E:/User/Desktop/SIT120%20Introduction%20to%20Responsive%20Web%20Apps/Seminars/Week%202%20Prac/Week%202%20Task%202.html#">Navigation Link 3</a>
+        </div>
+        
+        <link rel="stylesheet" href="mystyle.css">
+        
+        <h2>Vittorio Truglio - 219179512</h2>
+        
+        <p style="color:red;">Week 2: Responsive web design, HTML, CSS and JavaScript </p>
+        <p id="Live_Time"></p>
+        
+        <div class="row">
+
+        <div class="column">
+          <h3 style="color:#ffffff; background-color:rgb(78, 78, 78);">Example Column</h3>
+          <p>Example content.</p>            
+        </div>
+            
+        <div class="column">
+            <h3 style="color:#ffffff; background-color:rgb(78, 78, 78);">Example Column</h3>
+            <p>Example content.</p>
+        </div>
+            
+        <div class="column">
+            <h3 style="color:#ffffff; background-color:rgb(78, 78, 78);">Example Column</h3>
+            <p>Example content.</p>
+        </div>
+        </div>
+        
+        <img src="https://www.digitaland.tv/wp-content/uploads/2016/03/banner_developer-.jpg" alt="HTML" width="40%" height="200" class="center">
+        
+    </body>
+        
+        <script>
+            const d = new Date();
+            document.getElementById("Live_Time").innerHTML = d;
+       
+        </script>
+</html>
