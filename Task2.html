@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Task 2 </title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <input type="checkbox" id="checkbox" v-model="checked" />
+            <label for="checkbox">{{ checked }}</label>
+            <div></div>
+            <input type="checkbox" id="James" value="James" v-model="checkedNames">
+            <label for="jack">Jack</label>
+            <input type="checkbox" id="Josten" value="Josten" v-model="checkedNames">
+            <label for="john">John</label>
+            <input type="checkbox" id="Gregor" value="Gregor" v-model="checkedNames">
+            <label for="mike">Mike</label>
+            <br />
+<span>Users logged in: {{ checkedNames }}</span>
+        </div>
+    </body>
+</html>
+<script>
+    let app = new Vue({
+        el: '#app',
+        data: {
+           checked: false,
+           checkedNames: [],
+        },
+    });
+    app.count = 2;
+</script>
+
